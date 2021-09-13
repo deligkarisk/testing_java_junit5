@@ -28,6 +28,8 @@ class OwnerTest {
     @ParameterizedTest(name = "{displayName}[{index}] {arguments}")
     @DisplayName("Value Source Test - ")
     @CsvSource({
+            "FL, 1, 1",
+            "OH, 4, 5"
 
     })
     void csvInputTest(String stateName, int val1, int val2) {
